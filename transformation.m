@@ -1,5 +1,5 @@
 function [B] =transformation(M)
-[rows,cloms]=size(M);
+[rows,cloms,s]=size(M);
 
 for i=1:rows
     for j=1:cloms
@@ -22,7 +22,7 @@ end
 %à l'aide des tableaux k1 et k2 calculés précédemment.
 for i=1:rows
     for j=1:cloms
-     B(k1(i),k2(j))=M(i,j);
+     B(k1(i),k2(j),:)=M(i,j,:);
     end
 end 
 
