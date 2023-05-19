@@ -21,20 +21,10 @@ From the two equations below, create a function that performs the Photomaton tra
 • This function takes the matrix M as input and returns its transformed matrix B.
 - If the position k of a pixel is odd, then: k' = (k + 1) / 2.
 - If the position k of a pixel is even, then: k' = (k + n) / 2.
-- A =
-
-     1     2     3     4
-     5     6     7     8
-     9    10    11    12
-    13    14    15    16
+-A = [1,2,3,4;5,6,7,8;9,10,11,12;13,14,15,16]
     
     ====>
-    A =
-
-     1     2     3     4
-     9     11    10    12
-     5     7     6      8
-     13    15    14    16
+ A = [1,3,2,4;9,11,10,12;5,7,6,8;13,15,14,16]
     
     
 Let's try on this Gray-scale Image
